@@ -1,0 +1,76 @@
+
+.genel{
+    position: absolute;
+
+    margin-left: 100px;
+    //margin-right: 100px;
+    margin-top: 50px;
+    width: auto;
+    background-color: #fff;
+    font-size: xx-large;
+}
+
+.genel2{
+    margin-bottom: 0%;
+    margin-left: 75%;
+    margin-right: 10%;
+    margin-top: 50px;
+}
+
+.genel2 .totalPrice{
+    position: static;
+    background-color: #34495e ;
+    font-size: x-large;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+.tablo{
+    margin-left: 5%;
+    margin-top: 30px;
+}
+
+.tablo .button{
+    background-color: #fff;
+
+}
+ .tablo .button:hover{
+    background-color: #34495e;
+    color: #fff;
+ }
+
+.urunler .resim{
+    width: 100px;
+   height: 110px;
+}
+
+
+.product {
+    margin-top: 20px;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+  
+  .product .item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 1px 2px 1px #eee;
+    box-shadow: 0 1px 2px 1px #eee;
+}
+.product .item_name {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.product .item_description {
+    color: #888;
+}
+.product .item_price {
+    font-size: 20px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+  

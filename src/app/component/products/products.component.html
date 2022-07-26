@@ -1,0 +1,57 @@
+<div class="site-inner">
+
+  <div class="categories">
+    <div *ngFor="let category of categories" routerLink="/category/{{category.name.toLowerCase()}}">
+      <h4 class="category">{{ category.name.toUpperCase() }}</h4>
+    </div>
+  </div>
+
+  <div *ngIf="!inCategory">
+
+  <div class="wrap">
+    <div id="products" class="products">
+      <ul *ngIf="products"></ul>
+        <div *ngFor="let product of products" routerLink="/detail/{{product.id}}">                
+          <div [class.selected]="product === selectedProducts" type="button" (click)="showLoader()" > 
+             <div class="column one-third">
+               <div class="simpleCart_shelfItem item">
+                  <div class="item_image" style=" display: flex;
+                  justify-content: center;"><img src="{{product.imagePath}}" style="height: 300px ; "></div>
+                    <h2 class="item_name">{{product.name}}</h2>
+                    <div class="item_description">{{product.description}}</div>
+                       <div style="margin-top:10px;">
+                        <span class="item_price">${{product.price}}</span>
+                        <button type="button" class="btn btn-default btn-sm"><b> DETAYLAR </b></button>
+                  </div>
+                </div>
+                </div>
+               </div>
+        </div>
+      </div>
+</div>
+</div>
+
+
+<div *ngIf="inCategory">
+<div class="wrap">
+<div class="product" 
+*ngFor="let product of categoryProducts" routerLink="/detail/{{product.id}}">
+  <div [class.selected]="product === selectedProducts" type="button" (click)="showLoader()">
+
+    <div class="column one-third">
+      <div class="simpleCart_shelfItem item">
+         <div class="item_image" style=" display: flex;
+         justify-content: center;"><img src="{{product.imagePath}}" style="height: 300px ; "></div>
+           <h2 class="item_name">{{product.name}}</h2>
+           <div class="item_description">{{product.description}}</div>
+              <div style="margin-top:10px;">
+               <span class="item_price">${{product.price}}</span>
+               <button type="button" class="btn btn-default btn-sm"><b> DETAILS </b></button>
+         </div>
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,260 @@
+.wrap {
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+
+
+.clearfix:before, .site-container:before, .site-footer:before, .site-header:before, .site-inner:before, .wrap:before {
+    content: " ";
+    display: table;
+}
+
+
+
+.site-inner {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2 0 auto;
+    -ms-flex: 2 0 auto;
+    flex: 2 0 auto;
+    padding-top: 0px;
+}
+
+
+
+.clearfix:after, .site-container:after, .site-footer:after, .site-header:after, .site-inner:after, .wrap:after {
+    clear: both;
+    content: " ";
+    display: table;
+}
+
+
+.products {
+    margin-top: 20px;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+
+
+
+.column:nth-child(3n+2) {
+    clear: both;
+}
+
+.one-half, .one-third, .one-forth {
+    width: 30%;
+}
+.column {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+
+.products .item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 1px 2px 1px #eee;
+    box-shadow: 0 1px 2px 1px #eee;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+div {
+    display: block;
+}
+
+
+
+.products .item_name {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 3.6rem;
+    line-height: 1.25;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    font-family: 'Duru Sans', sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+.products .item_description {
+    color: #888;
+}
+
+
+.site-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+element.style {
+    margin-top: 10px;
+}
+
+
+.products .item_price {
+    font-size: 20px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+
+
+
+
+button, .button {
+    margin-bottom: 1rem;
+}
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
+    border-radius: 4px;
+    border: 1px solid #33C3F0;
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+
+button {
+    overflow: visible;
+}
+
+
+
+
+
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+
+
+button, select {
+    text-transform: none;
+}
+
+
+
+kullanıcı aracısı stil sayfası
+
+
+body {
+    height: 100%;
+    font-size: 1.6em;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Istok Web', sans-serif;
+    color: #222;
+    text-rendering: optimizeLegibility;
+}
+
+::selection {
+    background-color: #333;
+    color: #fff;
+}
+
+.category {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    width: 11%;
+    float: left;
+    text-align: center;
+  }
+  
+  .categories {
+    text-align: center;
+    color: #2e9bb4;
+    font-weight: bold;
+    font-size: 1.2rem;
+  
+  }
+  .product {
+    margin-top: 20px;
+    margin-left: -1%;
+    margin-right: -1%;
+}
+  
+  .product .item {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0 1px 2px 1px #eee;
+    box-shadow: 0 1px 2px 1px #eee;
+}
+.product .item_name {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.product .item_description {
+    color: #888;
+}
+.product .item_price {
+    font-size: 20px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 5px;
+}

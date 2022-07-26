@@ -1,0 +1,24 @@
+
+<div class="genel" style="height: 430px;" *ngIf="product">
+  <h2 id="baslik">{{product.name | uppercase}}</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ipsum qui veritatis corrupti deleniti laborum aliquid officia quibusdam nobis fugit non neque praesentium, commodi inventore, ex necessitatibus voluptas reiciendis, autem iure vero eius! Voluptatem accusamus odio voluptates debitis reiciendis reprehenderit deserunt, repudiandae rerum error perferendis ipsam labore est, soluta totam beatae. Id eum doloribus incidunt impedit cumque sequi reprehenderit corrupti aspernatur numquam laboriosam unde, doloremque dolorem. Repudiandae fugit doloribus blanditiis ut esse, libero quasi, sint, cumque explicabo voluptatibus in minus modi iusto quidem corrupti ipsa delectus dolorum sequi nobis numquam sit quaerat officia optio dolor. Porro omnis ullam, soluta dolorum hic voluptate ex veniam harum eius, nobis ab animi aut? Expedita soluta iste culpa molestiae facere ad ullam voluptate laboriosam quos omnis. Atque animi dicta et quidem nam nulla nihil minima culpa porro soluta sapiente quos, ducimus ut fuga, rem odio praesentium debitis vero! Enim odit esse, vitae tempora officiis ipsam rem eum debitis optio necessitatibus fuga totam dolore labore numquam quas sapiente et temporibus placeat asperiores! Nemo repellat repudiandae praesentium quisquam fugiat eos earum debitis, facere ducimus incidunt commodi?</p>
+  <!--<div><span>id: </span>{{product.id}}</div>-->
+  <div>
+    
+    <br>
+    <span class="name">{{product.name}}</span>
+    <br>
+    <span class="price"> Ücret= ${{product.price}} </span>
+    <br>
+    <button type="button"   (click)="addToShoppingCart(product)"
+    class="btn btn-default btn-sm"> <b> SEPETE EKLE </b>
+    </button>
+  </div>
+</div>
+
+
+<div class="genel2" *ngIf="product">
+  <div class="urun" style="height: 430px; color: white;">
+    <img id="resim" style="height: 430px;" src="{{product.imagePath}}">
+  </div>
+</div>
